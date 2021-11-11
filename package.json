@@ -1,0 +1,14 @@
+{
+    "name": "LAN_hotel",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Alberto Camacho <alberto@Alberto>",
+    "license": "MIT",
+    "scripts": {
+      "compile:sass":"node-sass --watch sass/main.scss css/style.css"
+    },
+    "dependencies": {},
+    "devDependencies": {
+      "node-sass": "^6.0.1"
+    }
+  }

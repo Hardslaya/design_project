@@ -3,7 +3,7 @@
 *::before {
     margin: 0;
     padding: 0;
-    box-sizing: inherit; // Force inheritance. Better practice
+    box-sizing: inherit; 
 }
 
 html {
@@ -25,8 +25,9 @@ html {
 }
 
 body {
-    box-sizing: border-box; // Not inherited
-    padding: 3rem; // padding is not inherit 
+    font: oblique bold 120% cursive;
+    box-sizing: border-box; 
+    padding: 3rem; 
 
     @include respond(tab-port) {
         padding: 0;

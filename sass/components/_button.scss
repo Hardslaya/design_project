@@ -1,0 +1,70 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        font-size: $default-font-size;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        border: none;
+        cursor: pointer;
+        outline: none;
+
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 1rem 2rem rgba($color-black, .2);
+
+            &::after {
+                transform: scaleX(1.4) scaleY(1.6);
+                opacity: 0;
+            }
+        }
+
+        &:active,
+        &:focus {
+            outline: none;
+            transform: translateY(-1px);
+            box-shadow: 0 .5rem 2rem rgba($color-black, .2);
+        }
+    }
+
+    &--1 {
+        background-image: linear-gradient(to right bottom, rgba($color-1-light, .85), rgba($color-1-dark, .85));
+        color: $color-white;
+
+        &::after {
+            background-image: linear-gradient(to right bottom, rgba($color-1-light, .85), rgba($color-1-dark, .85));
+        }
+    }
+
+    &--2 {
+        background-image: linear-gradient(to right bottom, rgba($color-2-light, .85), rgba($color-2-dark, .85));
+        color: $color-white;
+
+        &::after {
+            background-image: linear-gradient(to right bottom, rgba($color-2-light, .85), rgba($color-2-dark, .85));
+        }
+    }
+
+    &--3 {
+        background-image: linear-gradient(to right bottom, rgba($color-3-light, .85), rgba($color-3-dark, .85));
+        color: $color-white;
+
+        &::after {
+            background-image: linear-gradient(to right bottom, rgba($color-3-light, .85), rgba($color-3-dark, .85));
+        }
+    }
+
+    &--4 {
+        background-image: linear-gradient(to right bottom, rgba($color-4-light, .85), rgba($color-4-dark, .85));
+        color: $color-white;
+
+        &::after {
+            background-image: linear-gradient(to right bottom, rgba($color-4-light, .85), rgba($color-4-dark, .85));
+        }
+    }
+}

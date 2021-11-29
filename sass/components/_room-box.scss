@@ -1,25 +1,85 @@
 .room-box{
-    background-color: rgba($color: $color-white, $alpha: 0.8);
-    font-size: 1.5rem;
-    padding: 2.5rem;
-    text-align: center;
-    border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-    transition: transform .3s;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 52rem;
+    background-color: $color-white;
 
-    @include respond(tab-port) {
-        padding: 2rem;
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
     }
-    
-    &__picture {
+
+    &__picture{
         background-size: cover;
         height: 23rem;
         background-blend-mode: screen;
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        border-top-left-radius: 3px; //added because clip-path property breaks overflow behaviour in old chrome versions
-        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        &--1{
+            background-image: linear-gradient(to right bottom, $color-1-light, $color-1-dark), url(../../img/whr.jpg);
+        }
+        &--2{
+            background-image: linear-gradient(to right bottom, $color-2-light, $color-2-dark), url(../../img/blr2.jpg);
+        }
+        &--3{
+            background-image: linear-gradient(to right bottom, $color-3-light, $color-3-dark), url(../../img/grlr.jpg);
+        }
+        &--4{
+            background-image: linear-gradient(to right bottom, $color-4-light, $color-4-dark), url(../../img/redlr2.jpg);
+        }
     }
-    &:hover {
-        transform: translateY(-1.5rem) scale(1.03);
+
+    &__heading{
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        position: absolute;
+        top:12rem;
+        right: 2rem;
+        width: 75%;
+    }
+    &__heading-span{
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        &--1{
+            background-image: linear-gradient(to right bottom, rgba($color-1-light, .85), rgba($color-1-dark, .85));
+        }
+        &--2{
+            background-image: linear-gradient(to right bottom, rgba($color-2-light, .85), rgba($color-2-dark, .85));
+        }
+        &--3{
+            background-image: linear-gradient(to right bottom, rgba($color-3-light, .85), rgba($color-3-dark, .85));
+        }
+        &--4{
+            background-image: linear-gradient(to right bottom, rgba($color-4-light, .85), rgba($color-4-dark, .85));
+        }
+    }
+
+    &__text{
+        padding: 2rem;
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto; 
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-dark;
+                }
+            }
+        }
+    }
+
+    &__button{
+        text-align: center;
     }
 }

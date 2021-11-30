@@ -5,8 +5,25 @@
     height: 52rem;
     background-color: $color-white;
 
-    &:hover {
-        transform: translateY(-1.5rem) scale(1.03);
+    &--1{
+        &:hover{
+            box-shadow: 0 2.5rem 4rem rgba($color-1-dark, .5);
+        }
+    }
+    &--2{
+        &:hover{
+            box-shadow: 0 2.5rem 4rem rgba($color-2-dark, .5);
+        }
+    }
+    &--3{
+        &:hover{
+            box-shadow: 0 2.5rem 4rem rgba($color-3-dark, .5);
+        }
+    }
+    &--4{
+        &:hover{
+            box-shadow: 0 2.5rem 4rem rgba($color-4-dark, .5);
+        }   
     }
 
     &__picture{
@@ -16,6 +33,7 @@
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         border-top-left-radius: 3px;
         border-bottom-right-radius: 3px;
+
         &--1{
             background-image: linear-gradient(to right bottom, $color-1-light, $color-1-dark), url(../../img/whr.jpg);
         }

@@ -36,7 +36,7 @@
             color: $color-grey-light;
         }
     }
-    &__content {
+    &__main {
         @include absCenter;
         width: 75%;
         background-color: $color-white;
@@ -44,13 +44,14 @@
         border-radius: 3px;
         display: table;
         overflow: hidden;
-        //opacity: 0;
-        transform: translate(-50%, -50%) scale(0.25);
+        transform: translate(-50%, -50%);
         transition: all 0.5s 0.2s;        
     }
     &__left {
         width: 33.333333333%;
         display: table-cell;
+        vertical-align: middle;
+        padding: 3rem 5rem;
     }
     
     &__right {
@@ -63,6 +64,8 @@
     &__img {
         display: block;
         width: 100%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 
     &__text {

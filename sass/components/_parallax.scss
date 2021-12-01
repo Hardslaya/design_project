@@ -3,8 +3,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(/img/background.jpeg);
-    min-height: 100%;
+    background-image: url(/img/background.jpg);
+    height: 100vh;
+    width: 100%; //Probar 100vw que coge el ancho total de la pantalla
     &__section{
         opacity: 0.75;
     }
@@ -22,6 +23,6 @@
         align-items: center;
         justify-content: center;
         align-self: center;
-        height: 1024px;
+        height: 100%;
     }
 }

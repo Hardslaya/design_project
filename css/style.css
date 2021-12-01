@@ -58,18 +58,13 @@ body {
   display: inline-block;
   background-image: linear-gradient(to right, #b030b0, #602080);
   -webkit-background-clip: text;
-  color: transparent;
-  letter-spacing: 2px;
-  transition: all .2s; }
+  color: transparent; }
   @media only screen and (max-width: 56.25em) {
     .heading {
       font-size: 3rem; } }
   @media only screen and (max-width: 37.5em) {
     .heading {
       font-size: 2.5rem; } }
-  .heading:hover {
-    transform: skewY(2deg) skewX(15deg) scale(1.1);
-    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .heading-secondary {
   font-size: 2.5rem;
@@ -180,7 +175,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 45%; }
+    width: 50%; }
   .parallax__text {
     margin: 0;
     display: flex;
@@ -232,12 +227,12 @@ body {
     transform: translate(-50%, -50%);
     transition: all 0.5s 0.2s; }
   .popup__left {
-    width: 33.333333333%;
+    width: 40%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
   .popup__right {
-    width: 66.666666667%;
+    width: 60%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
@@ -245,7 +240,10 @@ body {
     display: block;
     width: 100%;
     padding-top: 2rem;
-    padding-bottom: 2rem; }
+    padding-bottom: 2rem;
+    transition: 0.5s; }
+    .popup__img:hover {
+      transform: scale(1.2); }
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
@@ -320,6 +318,42 @@ body {
   .room-box__button {
     text-align: center; }
 
+.footer {
+  background-color: #000;
+  padding: 5rem 0rem;
+  font-size: 1.2rem;
+  color: #fff; }
+  .footer__logo {
+    text-align: center;
+    margin-bottom: 5rem; }
+  .footer__img {
+    width: 15rem;
+    height: auto; }
+  .footer__info {
+    border-top: 2px solid #fff;
+    padding-top: 2rem;
+    display: inline-block; }
+  .footer__list {
+    list-style: none; }
+  .footer__element {
+    display: inline-block; }
+    .footer__element:not(:last-child) {
+      margin-right: 1.5rem; }
+  .footer__link:link, .footer__link:visited {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.5s; }
+  .footer__link:hover, .footer__link:active {
+    color: #777;
+    transform: scale(1.2); }
+  .footer__text {
+    border-top: 2px solid #fff;
+    padding-top: 2rem;
+    width: 65%;
+    float: right; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -372,8 +406,7 @@ body {
 
 .section-rooms {
   background-color: #eee;
-  padding: 25rem 0 15rem 0;
-  margin-top: -12rem; }
+  padding: 15rem 0 15rem 0; }
   @media only screen and (max-width: 56.25em) {
     .section-rooms {
-      padding: 20rem 0 10rem 0; } }
+      padding: 10rem 0 10rem 0; } }

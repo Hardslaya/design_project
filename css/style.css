@@ -231,11 +231,17 @@ body {
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .popup__left {
+        padding: 1rem 3rem; } }
   .popup__right {
     width: 60%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .popup__right {
+        padding: 1rem 3rem; } }
   .popup__img {
     display: block;
     width: 100%;
@@ -251,6 +257,10 @@ body {
     column-gap: 4rem;
     column-rule: 1px solid #eee;
     hyphens: auto; }
+    @media only screen and (max-width: 56.25em) {
+      .popup__text {
+        column-count: 1;
+        column-gap: 2rem; } }
 
 .room-box {
   perspective: 150rem;
@@ -258,6 +268,9 @@ body {
   position: relative;
   height: 52rem;
   background-color: #fff; }
+  @media only screen and (max-width: 56.25em) {
+    .room-box {
+      height: auto; } }
   .room-box--1:hover {
     box-shadow: 0 2.5rem 4rem rgba(126, 124, 124, 0.5); }
   .room-box--2:hover {
@@ -316,7 +329,8 @@ body {
         .room-box__text ul li:not(:last-child) {
           border-bottom: 1px solid #777; }
   .room-box__button {
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 3rem; }
 
 .footer {
   background-color: #000;
@@ -333,6 +347,10 @@ body {
     border-top: 2px solid #fff;
     padding-top: 2rem;
     display: inline-block; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__info {
+        width: 100%;
+        text-align: center; } }
   .footer__list {
     list-style: none; }
   .footer__element {
@@ -353,6 +371,11 @@ body {
     padding-top: 2rem;
     width: 65%;
     float: right; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__text {
+        width: 100%;
+        text-align: center;
+        float: none; } }
 
 .row {
   max-width: 114rem;
